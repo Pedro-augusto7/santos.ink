@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Santos Ink - Tatuador</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f0f0f;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px;
+    background: black;
+}
+
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background: #2a2a2a;
+}
+
+.btn {
+    display: inline-block;
+    background: #00ff88;
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.galeria {
+    display: none;
+    margin-top: 15px;
+}
+
+.galeria img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+</style>
+
+<script>
+function abrirInstagram() {
+    window.open("https://instagram.com/ssantos.ink", "_blank");
+}
+
+function toggleGaleria(id) {
+    var galeria = document.getElementById(id);
+
+    if (galeria.style.display === "block") {
+        galeria.style.display = "none";
+    } else {
+        galeria.style.display = "block";
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>SANTOS INK</h1>
+<p>Tatuador | Historias eternizadas na pele</p>
+</header>
+
+<section>
+<h2>Sobre mim</h2>
+<p>
+Sou tatuador iniciante, apaixonado por transformar ideias em arte na pele. 
+Cada traço carrega dedicação, evolução constante e respeito pela história de cada cliente que será
+eternizada na pele.
+</p>
+</section>
+
+<section>
+<h2>Trabalhos</h2>
+
+<div class="card" onclick="abrirInstagram()">
+📱 Ver trabalhos no Instagram
+</div>
+
+<div class="card" onclick="toggleGaleria('tatuagens')">
+💉 Tatuagens realizadas
+</div>
+
+<div id="tatuagens" class="galeria">
+<img src="https://via.placeholder.com/400x200">
+<img src="https://via.placeholder.com/400x200">
+</div>
+
+
+
+<div id="desenhos" class="galeria">
+<img src="https://via.placeholder.com/400x200">
+<img src="https://via.placeholder.com/400x200">
+</div>
+
+</section>
+
+<section>
+<h2>Contato</h2>
+<a class="btn" href="https://wa.me/SEUNUMEROAQUI" target="_blank">
+Agendar pelo WhatsApp
+</a>
+</section>
+
+<footer>
+<p>© 2026 Santos Ink</p>
+</footer>
+
+</body>
+</html>
